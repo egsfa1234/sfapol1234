@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFA Foundation - Finance Policy & Procedures Manual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #003366;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .document-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        
+        .info-item {
+            border-left: 4px solid #003366;
+            padding-left: 15px;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #003366;
+        }
+        
+        .toc {
+            background-color: #f0f0f0;
+            padding: 25px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .toc h2 {
+            color: #003366;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .toc-list {
+            list-style: none;
+            columns: 2;
+            column-gap: 30px;
+        }
+        
+        .toc-list li {
+            margin-bottom: 12px;
+            break-inside: avoid;
+        }
+        
+        .toc-list a {
+            color: #003366;
+            text-decoration: none;
+            border-bottom: 1px dotted #003366;
+        }
+        
+        .toc-list a:hover {
+            color: #0055aa;
+        }
+        
+        .content {
+            margin-top: 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+        
+        .section h2 {
+            color: #003366;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+        }
+        
+        .section h3 {
+            color: #0055aa;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #003366;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background-color: #ffffcc;
+            padding: 20px;
+            border-left: 4px solid #ffcc00;
+            margin: 20px 0;
+        }
+        
+        .download-section {
+            background-color: #e8f4f8;
+            padding: 25px;
+            border-radius: 5px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #003366;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #0055aa;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .document-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .toc-list {
+                columns: 1;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+            }
+            
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+            
+            .download-section {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FINANCE POLICY & PROCEDURES MANUAL</h1>
+            <p class="subtitle">Science for Africa Foundation</p>
+        </header>
+        
+        <div class="document-info">
+            <div class="info-item">
+                <span class="info-label">Policy ID:</span> SFA-FN-21-04
+            </div>
+            <div class="info-item">
+                <span class="info-label">Policy Domain:</span> Finance
+            </div>
+            <div class="info-item">
+                <span class="info-label">Version:</span> 3.0
+            </div>
+            <div class="info-item">
+                <span class="info-label">Effective Date:</span> August 18, 2021
+            </div>
+            <div class="info-item">
+                <span class="info-label">Policy Scope:</span> Internal
+            </div>
+            <div class="info-item">
+                <span class="info-label">Approved By:</span> SFA Foundation Board of Directors
+            </div>
+        </div>
+        
+        <div class="download-section">
+            <h3>Access This Document</h3>
+            <p>View the official policy documents:</p>
+            <a href="https://github.com/egsfa1234/sfapol1234/blob/73f70a4a03b5b7c6b308fba6894bdc4b4ca49947/sfapoliciescombined" class="btn" target="_blank">View Original File</a>
+            <a href="#" class="btn" onclick="window.print(); return false;">Print/Save as PDF</a>
+        </div>
+        
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul class="toc-list">
+                <li><a href="#intro">1.0 Introduction</a></li>
+                <li><a href="#accounting">2.0 Accounting Procedures</a></li>
+                <li><a href="#control">3.0 Internal Control</a></li>
+                <li><a href="#planning">4.0 Financial Planning and Reporting</a></li>
+                <li><a href="#revenue">5.0 Revenue and Accounts Receivable</a></li>
+                <li><a href="#expense">6.0 Expense and Accounts Payable</a></li>
+                <li><a href="#cash">7.0 Cash and Bank Management</a></li>
+                <li><a href="#asset">8.0 Asset Management</a></li>
+                <li><a href="#tax">9.0 Tax Management and Compliance</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 id="intro">1.0 INTRODUCTION</h2>
+                <p>This manual presents the basic policies and procedures that govern SFA Foundation financial operations. It helps SFA Foundation establish financial controls within the organization to ensure accuracy, timeliness and completeness of financial data. The manual is generally used by finance staff, but it can also act as a reference for SFA Foundation Board and SFA Foundation staff.</p>
+                
+                <h3>1.1 Content, Structure and Approval of the Manual</h3>
+                <p>This manual has been reviewed and approved by the SFA Foundation Board through the recommendation of the Executive Management Team and Finance, Risk and Audit Committee. It contains detailed guidelines and rules, which will be applied for the financial management of SFA Foundation.</p>
+                
+                <h3>1.2 Financial Roles and Responsibilities</h3>
+                <p><strong>SFA Foundation Board:</strong> Provides eventual approval of policies, establishes financial management priorities, and monitors financial management through policies and financial reports.</p>
+                <p><strong>Executive Management Team (EMT):</strong> Supports decision-making for budget approval and financial policy matters.</p>
+                <p><strong>Finance Team:</strong> Comprises the Head of Finance and Grants, Financial Accountant, Grant Accountants, Finance Officers, and Procurement Officer.</p>
+                
+                <h3>1.2.4 Finance, Risk and Audit (FRA)</h3>
+                <p>The committee is composed of at least three Board members appointed by board resolution. The committee's mandate includes reviewing the effectiveness of the Enterprise Risk Management system, recommending auditor approval, reviewing internal audit reports, administering internal control issues, and overseeing budget preparation and financial planning.</p>
+            </div>
+            
+            <div class="section">
+                <h2 id="accounting">2.0 ACCOUNTING PROCEDURES</h2>
+                <h3>2.1 Basis of Accounting</h3>
+                <p>SFA Foundation financial statements are prepared in accordance with the Generally Accepted Accounting Practices (GAAP).</p>
+                
+                <h3>2.2 Financial Statements</h3>
+                <p>The following statements shall be prepared annually:</p>
+                <ul>
+                    <li>Statement of Financial Position</li>
+                    <li>Statement of Comprehensive Income and Expenditures</li>
+                    <li>Statement of Changes in Fund Balances</li>
+                    <li>Statement of Cash Flows</li>
+                </ul>
+                
+                <div class="highlight">
+                    <strong>Note:</strong> Audited accounts will be completed by the end of the fourth month after the financial year end. SFA Foundation financial year runs from January to December.
+                </div>
+                
+                <h3>2.2 Accounting Principles</h3>
+                <ul>
+                    <li><strong>Modified Cash Basis:</strong> Expenses recognized when incurred, income when received</li>
+                    <li><strong>Going Concern:</strong> Assumes SFA Foundation will continue indefinitely</li>
+                    <li><strong>Monetary Unit:</strong> Transactions recorded in monetary units (US Dollar as base currency)</li>
+                    <li><strong>Historical Cost:</strong> Resources valued at actual cost of acquisition</li>
+                    <li><strong>Prudence Concept:</strong> Assets at lowest probable valuations, liabilities recognized immediately</li>
+                    <li><strong>Consistency:</strong> Same accounting procedures maintained across periods</li>
+                    <li><strong>Materiality:</strong> Material transactions properly reported</li>
+                    <li><strong>Objectivity:</strong> Transactions supported by impartial evidence</li>
+                </ul>
+                
+                <h3>2.3 Overview of The Financial Management System</h3>
+                <p>The Financial Management System (FMS) provides a maximum of 8 dimensions by which a cost can be tracked. SFA Foundation currently utilizes five (5) dimensions:</p>
+                <ul>
+                    <li>Fund No</li>
+                    <li>Funder</li>
+                    <li>Cost Centre</li>
+                    <li>Cost Unit</li>
+                    <li>Cost Type</li>
+                </ul>
+                
+                <h3>2.4 Record Keeping</h3>
+                <p>All documents supporting payments must be retained by SFA Foundation for a minimum of <strong>seven (7) years</strong> from the date of payment or as required by funders. Finance documents contain sensitive information and must be kept in custody of authorized personnel only.</p>
+                
+                <h3>2.5 Accounting for Foreign Currency Transaction</h3>
+                <p>Financial statements are presented in US Dollars. Transactions in other currencies are converted at the actual spot rate or rate of last currency conversion. SFA Foundation mitigates foreign exchange loss by maintaining grants in award currency and investing operational reserves for 3-6 months in the currency held.</p>
+            </div>
+            
+            <div class="section">
+                <h2 id="control">3.0 INTERNAL CONTROL</h2>
+                <h3>3.1 Internal Control Environment</h3>
+                <p>The SFA Foundation internal financial control system is designed to provide reasonable assurance on:</p>
+                <ul>
+                    <li>Effectiveness, efficiency, and economy of operations</li>
+                    <li>Reliability of reporting</li>
+                    <li>Safeguarding of assets and information</li>
+                    <li>Prevention and detection of fraud and irregularities</li>
+                    <li>Adequate management of risks relating to legality and regularity of transactions</li>
+                </ul>
+                
+                <h3>3.1.1 Segregation of Duties</h3>
+                <p>No one person should have sole control over a transaction's lifespan. Key functions are segregated: carrying out transactions, recording in accounting records, and maintaining custody of assets.</p>
+                
+                <h3>3.1.2 Financial Risk Management System</h3>
+                <p>The Financial Risk Management Register is maintained by the Head of Finance and Grants and reviewed quarterly. It provides information on risk owners, likelihood and impact scores, grading, mitigation plans, and future actions.</p>
+                
+                <h3>3.1.3 Management of Conflict of Interests</h3>
+                <p>All staff must sign the Code of Conduct. Conflicts of interest must be disclosed immediately to the Head of HR and Operations. Employees shall not accept gifts from suppliers except as token courtesies and must disclose suppliers they have conflicts with.</p>
+                
+                <h3>3.2 Authorization Matrix</h3>
+                <p>All payments require proper authorization based on the transaction amount:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Limit Amount (USD)</th>
+                            <th>Authorization Required</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A</td>
+                            <td>Above 500,001</td>
+                            <td>Three signatories: ED, Deputy Director, HOF (ED mandatory)</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>200,001 - 500,000</td>
+                            <td>Any 3 from A, B, C (ED mandatory)</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>50,001 - 200,000</td>
+                            <td>Any 2 from A, B, C (ED mandatory)</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>Up to 50,000</td>
+                            <td>Any 2 from A, B, C, D (HOF mandatory)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>3.3 Chart of Accounts</h3>
+                <p>The Chart of Accounts uses five-digit codes unique to each cost category:</p>
+                <ul>
+                    <li>Asset codes: Starting with Digit 10</li>
+                    <li>Liabilities codes: Starting with Digit 20</li>
+                    <li>Reserves codes: Starting with Digit 30</li>
+                    <li>Income/Revenue codes: Starting with Digit 40</li>
+                    <li>Expense codes: Starting with Digit 50</li>
+                    <li>Retained Earnings codes: Starting with Digit 70</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2 id="planning">4.0 FINANCIAL PLANNING AND REPORTING</h2>
+                <h3>4.1 Budget Cycles and Basis of Review</h3>
+                <p>The budget is the road map or plan of the organization and provides direction to meet its goals and objectives. Budget preparation follows a standard timeline to allow adequate time for review with all staff and the board.</p>
+                
+                <h3>4.2 Budget Categories</h3>
+                <p>SFA Foundation has two budget categories:</p>
+                <ul>
+                    <li><strong>Core/Administration Budget:</strong> Prepared annually, mainly funded by interest from core funding and indirect income from programmes</li>
+                    <li><strong>Programme Budgets:</strong> Annual or multi-year depending on donor awards</li>
+                </ul>
+                
+                <div class="highlight">
+                    <strong>Budget Timeline:</strong> Budget preparation starts in July and is finalized by end of October each year. The Budget Process starts with determining budget needs, setting program goals, developing strategy, translating strategy to dollars, preparing budget, setting up control processes, and monitoring budget continuously.
+                </div>
+                
+                <h3>4.3 Financial Year Plan, Budget Approval Steps and Timelines</h3>
+                <ul>
+                    <li>Programme budgets are completed before core budget to help determine arising needs</li>
+                    <li>Budgets may include capital items</li>
+                    <li>Budget process starts two months before submission to Audit & Risk Committee</li>
+                    <li>Board meets twice yearly for budget approval</li>
+                    <li>Administration Budget prepared by Head of Finance and Grants</li>
+                    <li>Programme budgets prepared by Programme Managers</li>
+                </ul>
+                
+                <h3>4.4 Financial Reporting</h3>
+                <p>The following reports are prepared and reviewed:</p>
+                <ul>
+                    <li><strong>Annual Audited Financial Statements:</strong> Presented to SFA Foundation Board annually</li>
+                    <li><strong>Financial Reports to Donors:</strong> Per grant agreements on agreed schedule</li>
+                    <li><strong>Cash Expenditure Forecasts:</strong> Prepared as needed for treasury management</li>
+                    <li><strong>Management Reports:</strong> Internal analysis for management review and EMT presentation</li>
+                </ul>
+                
+                <h3>4.5 Audit</h3>
+                <p><strong>External Audit:</strong> The SFA Foundation Board appoints auditors of international repute for 3-year periods from a list of at least three proposed firms. The contract can be renewed once for a 3-year period. All audit issues must be completed by 30 April of every year.</p>
+                
+                <p><strong>Internal Audit:</strong> An outsourced internal audit function reports to the Board with dotted responsibility to the Executive Director. They develop risk-based audit plans, perform audits per Institute of Internal Auditors standards, and provide reports with recommendations and management corrective actions.</p>
+            </div>
+            
+            <div class="section">
+                <h2 id="revenue">5.0 REVENUE AND ACCOUNTS RECEIVABLE</h2>
+                <h3>5.1 Recognition of Revenue</h3>
+                <p>Revenue is recognized when it is received. SFA Foundation has two primary sources of income:</p>
+                <ul>
+                    <li><strong>Grant Income:</strong> Funds from donors for specific programmes</li>
+                    <li><strong>Operational Income:</strong> Interest from short-term investments, indirect recoveries, and business sources</li>
+                </ul>
+                
+                <h3>5.2 Receipting of Revenue</h3>
+                <p>To ensure all funds are fully accounted for:</p>
+                <ul>
+                    <li>Effective control of accounting documents (receipt books, chequebooks)</li>
+                    <li>All receipts processed in finance system; receipt issued in two copies</li>
+                    <li>All documents systematically digitized for audits</li>
+                </ul>
+                
+                <h3>5.3 Types of Grants</h3>
+                <ul>
+                    <li><strong>Unrestricted Funds:</strong> No specification on use; can support general operating expenses</li>
+                    <li><strong>Restricted Funds:</strong> Specific purpose attached; must comply with donor requirements</li>
+                </ul>
+                <p>Grant receivables are recognized when the pledge amount is known and award letter is received.</p>
+                
+                <h3>5.4 In-Kind Contributions</h3>
+                <p>Non-cash donations must meet one of these criteria:</p>
+                <ul>
+                    <li>The service creates a non-financial benefit or requires specialized skills</li>
+                    <li>Would typically be purchased by the organization</li>
+                </ul>
+                <p>Documentation must include: date, location, description, estimated value, valuation method, determination authority, government funding source, and contributor signature.</p>
+                
+                <h3>5.5 Staff Receivables</h3>
+                <p>Personal accounts capturing advances for travel, petty cash, and salary advances:</p>
+                <ul>
+                    <li>Petty cash advances: Must be accounted for within 5 days</li>
+                    <li>Travel advances: Must be accounted for within 10 days of return</li>
+                    <li>Non-compliance: Amounts recovered from payroll (within 1/3 net pay rule)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2 id="expense">6.0 EXPENSE AND ACCOUNTS PAYABLE</h2>
+                <h3>6.1 Payroll Review and Approval Process</h3>
+                <p>SFA Foundation's payroll is managed by the Finance Officer including monthly salary, allowances, and incentive payments. Payroll documents must be received by the 15th of the month. All salary changes require Head of Finance and Grants approval.</p>
+                
+                <h3>6.2 Payment Process for Suppliers and Consultants</h3>
+                <p>Payment must be based on supplier invoice referencing the Local Purchase Order (LPO) number. Payment is issued when there is reasonable assurance that goods/services have been received as specified and in acceptable condition.</p>
+                <p>The expenditure process includes: invoice scanning/entry, data entry, approval through workflows, vendor account posting, payment voucher preparation, payment run generation, and accounts payable review and reporting.</p>
+                
+                <h3>6.3 Employee Expense Reimbursement</h3>
+                <p>Staff travel expenses are governed by the SFA Foundation Corporate Travel Policy. Travel expense reports must be submitted with original receipts and approved per the authorization matrix.</p>
+                
+                <h3>6.4 Grant Accounting and Administration</h3>
+                <p>Grant accounting follows the SFA Foundation Grants Assurance Guidelines. The grant accountant:</p>
+                <ul>
+                    <li>Generates grantee code</li>
+                    <li>Commits the grant value</li>
+                    <li>Ensures correct record of transactions upon payment to grantees</li>
+                    <li>Closes out the grant in the finance system</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2 id="cash">7.0 CASH AND BANK MANAGEMENT</h2>
+                <h3>7.1 Cash Disbursement</h3>
+                <p>The Head of Finance and Grants must ensure that:</p>
+                <ul>
+                    <li>Approval is given by appropriate authority before payment</li>
+                    <li>Payment is for budgeted goods and services in the approved workplan</li>
+                    <li>Payments are made for goods/services received or per contractual obligations</li>
+                    <li>Prices are reasonable and accurate</li>
+                </ul>
+                <p>Payments can be made by: Bank (cheque, EFT, mobile money transfer) or Petty Cash.</p>
+                
+                <h3>7.2 Opening a Bank Account</h3>
+                <p>Bank accounts should be held with reputable banks considering local banking environment, internal controls, fund security, and currency risk. The Head of Finance and Grants determines the number and location of accounts. SFA Foundation maintains at least one account for each currency through which all grant funding flows. Board resolution is required to open new accounts.</p>
+                
+                <h3>7.2.1 Disbursements by Bank Cheques</h3>
+                <p>Key requirements:</p>
+                <ul>
+                    <li>Drawn only on duly approved Payment Vouchers</li>
+                    <li>Signed by at least two authorized signatories</li>
+                    <li>Use discouraged; EFT preferred</li>
+                    <li>Valid for amounts less than Ksh 1,000,000 or USD 10,000</li>
+                    <li>All cheques pre-numbered and accounted for monthly</li>
+                    <li>Voided cheques marked "VOID" with signature portion destroyed</li>
+                </ul>
+                
+                <h3>7.2.2 Disbursements by Electronic Funds Transfer (EFT)</h3>
+                <p>The Head of Finance is responsible for daily bank balance management and EFT oversight. Required for payments above Ksh 1,000,000 or USD 10,000. Supporting documentation must include payment amount, currency, business purpose, payee information, and banking details (bank name, address, SWIFT code, beneficiary account name and number).</p>
+                <p><strong>Process:</strong> Vendor created on banking system and approved by authorized signatory, then FO uploads payment and receives online authorization from bank signatory per authorization matrix.</p>
+                
+                <h3>7.3 Petty Cash Management</h3>
+                <p><strong>Objectives:</strong> Handle small, urgent cash payments with proper documentation and controls.</p>
+                <p><strong>Key Requirements:</strong></p>
+                <ul>
+                    <li>Designated custodian responsible for safekeeping</li>
+                    <li>All payments require supporting vouchers</li>
+                    <li>Regular replenishment and reconciliation</li>
+                    <li>Restrictions on single payment amounts</li>
+                    <li>Theft must be reported immediately</li>
+                </ul>
+                
+                <h3>7.4 Debit Card</h3>
+                <p>Debit cards are used for specific business purposes with documented objectives and controls.</p>
+                
+                <h3>7.5 Loss of Card</h3>
+                <p>Lost debit cards must be reported immediately to management for cancellation and replacement.</p>
+            </div>
+            
+            <div class="section">
+                <h2 id="asset">8.0 ASSET MANAGEMENT</h2>
+                <h3>8.1 Investments</h3>
+                <p><strong>Investment Objective:</strong> Generate returns while managing risk appropriately. The Foundation maintains a Reserve Fund for operational sustainability.</p>
+                
+                <h3>8.2 Capital Equipment</h3>
+                <p><strong>Capitalization Policy:</strong> Assets are capitalized based on organizational policy thresholds.</p>
+                <p><strong>Budgeting:</strong> Capital assets are included in annual budget planning (see section 4).</p>
+                <p><strong>Control:</strong> Adequate controls over fixed assets are maintained through proper documentation and tracking.</p>
+                <p><strong>Depreciation:</strong> Capital assets are depreciated according to their useful lives using consistent methods.</p>
+                <p><strong>Disposal Policy:</strong> Assets may be disposed through sale, donation, or write-off following established procedures.</p>
+            </div>
+            
+            <div class="section">
+                <h2 id="tax">9.0 TAX MANAGEMENT AND COMPLIANCE</h2>
+                <h3>9.1 The Policy</h3>
+                <p>SFA Foundation is committed to full compliance with all applicable tax regulations and requirements.</p>
+                
+                <h3>9.2 The Objective</h3>
+                <p>To ensure all statutory tax obligations are met timely and that the organization maintains its tax-exempt status where applicable.</p>
+                
+                <h3>9.3 The Process</h3>
+                <p>Regular monitoring and compliance reviews are conducted to ensure adherence to tax regulations, timely filing of all required returns, and proper documentation of all tax-related transactions.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Related Policies and Procedures</h2>
+                <ul>
+                    <li>Antifraud and Bribery Policy</li>
+                    <li>Corporate Travel Policy</li>
+                    <li>Procurement Guidelines and Procedures Manual</li>
+                    <li>Grant Assurance Guidelines</li>
+                    <li>Code of Conduct</li>
+                    <li>EMT Terms of Reference</li>
+                    <li>FRA Committee Terms of Reference</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>List of Abbreviations</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Abbreviation</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AL</td>
+                            <td>Award Letter</td>
+                        </tr>
+                        <tr>
+                            <td>COA</td>
+                            <td>Chart of Accounts</td>
+                        </tr>
+                        <tr>
+                            <td>EFT</td>
+                            <td>Electronic Funds Transfer</td>
+                        </tr>
+                        <tr>
+                            <td>ED</td>
+                            <td>Executive Director</td>
+                        </tr>
+                        <tr>
+                            <td>EMT</td>
+                            <td>Executive Management Team</td>
+                        </tr>
+                        <tr>
+                            <td>FA</td>
+                            <td>Financial Accountant</td>
+                        </tr>
+                        <tr>
+                            <td>FMS</td>
+                            <td>Finance Management System</td>
+                        </tr>
+                        <tr>
+                            <td>FO</td>
+                            <td>Finance Officer</td>
+                        </tr>
+                        <tr>
+                            <td>FRA</td>
+                            <td>Finance, Risk, Audit Committee</td>
+                        </tr>
+                        <tr>
+                            <td>GA</td>
+                            <td>Grant Accountant</td>
+                        </tr>
+                        <tr>
+                            <td>GAAP</td>
+                            <td>Generally Accepted Accounting Practices</td>
+                        </tr>
+                        <tr>
+                            <td>HOF</td>
+                            <td>Head of Finance and Grants</td>
+                        </tr>
+                        <tr>
+                            <td>HRO</td>
+                            <td>Head of HR and Operations</td>
+                        </tr>
+                        <tr>
+                            <td>IFRS</td>
+                            <td>International Financial Reporting Standards</td>
+                        </tr>
+                        <tr>
+                            <td>LPO</td>
+                            <td>Local Purchase Order</td>
+                        </tr>
+                        <tr>
+                            <td>PD</td>
+                            <td>Programme Director</td>
+                        </tr>
+                        <tr>
+                            <td>PM</td>
+                            <td>Programme Manager</td>
+                        </tr>
+                        <tr>
+                            <td>PO</td>
+                            <td>Procurement Officer</td>
+                        </tr>
+                        <tr>
+                            <td>PPE</td>
+                            <td>Property Plant and Equipment</td>
+                        </tr>
+                        <tr>
+                            <td>SFA</td>
+                            <td>Science for Africa Foundation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <footer>
+            <p><strong>Document Information:</strong></p>
+            <p>Policy ID: SFA-FN-21-04 | Version: 3.0 | Effective Date: August 18, 2021</p>
+            <p>Approved by: SFA Foundation Board of Directors</p>
+            <p>Policy Author: Head of Finance & Grants Accountant</p>
+            <p><em>This is a permanent web version of the SFA Foundation Finance Policy & Procedures Manual.</em></p>
+            <p style="margin-top: 20px; color: #999; font-size: 0.85em;">Hosted on GitHub Pages | Source: <a href="https://github.com/egsfa1234/sfapol1234" style="color: #999;">egsfa1234/sfapol1234</a></p>
+        </footer>
+    </div>
+</body>
+</html>
