@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFA Foundation - Policy Documentation Center</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .policies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .policy-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .policy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .policy-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .policy-card h2 {
+            color: #003366;
+            margin-bottom: 12px;
+            font-size: 1.5em;
+        }
+        
+        .policy-card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        
+        .policy-meta {
+            font-size: 0.85em;
+            color: #999;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #0055aa;
+        }
+        
+        .btn-secondary {
+            background-color: #666;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #444;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .policies-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SFA Foundation</h1>
+            <p class="tagline">Policy Documentation Center</p>
+        </header>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Core Policies</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Pages</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2021</div>
+                <div class="stat-label">Current Version</div>
+            </div>
+        </div>
+        
+        <div class="policies-grid">
+            <!-- Finance Policy Card -->
+            <div class="policy-card">
+                <div class="policy-icon">💰</div>
+                <h2>Finance Policy & Procedures Manual</h2>
+                <div class="policy-meta">
+                    <strong>Policy ID:</strong> SFA-FN-21-04<br>
+                    <strong>Version:</strong> 3.0<br>
+                    <strong>Effective:</strong> August 18, 2021
+                </div>
+                <p>Comprehensive guidelines governing SFA Foundation financial operations, controls, budgeting, reporting, and compliance with accounting standards.</p>
+                <a href="docs/finance-policy.html" class="btn">Read Policy</a>
+            </div>
+            
+            <!-- Antifraud Policy Card -->
+            <div class="policy-card">
+                <div class="policy-icon">🛡️</div>
+                <h2>Antifraud and Bribery Policy</h2>
+                <div class="policy-meta">
+                    <strong>Document Type:</strong> Compliance Policy<br>
+                    <strong>Scope:</strong> Internal<br>
+                    <strong>Status:</strong> Active
+                </div>
+                <p>Establishes organization-wide standards to prevent fraud, bribery, and corruption. Defines roles, reporting procedures, and consequences.</p>
+                <a href="docs/antifraud-policy.html" class="btn">Read Policy</a>
+            </div>
+            
+            <!-- Travel Policy Card -->
+            <div class="policy-card">
+                <div class="policy-icon">✈️</div>
+                <h2>Corporate Travel Policy</h2>
+                <div class="policy-meta">
+                    <strong>Document Type:</strong> HR Policy<br>
+                    <strong>Scope:</strong> All Staff<br>
+                    <strong>Status:</strong> Active
+                </div>
+                <p>Guidelines for staff travel authorization, booking procedures, expense reimbursement, and safety protocols for official business travel.</p>
+                <a href="docs/travel-policy.html" class="btn">Read Policy</a>
+            </div>
+            
+            <!-- Procurement Policy Card -->
+            <div class="policy-card">
+                <div class="policy-icon">📋</div>
+                <h2>Procurement Guidelines & Procedures</h2>
+                <div class="policy-meta">
+                    <strong>Document Type:</strong> Operations Manual<br>
+                    <strong>Scope:</strong> Procurement<br>
+                    <strong>Status:</strong> Active
+                </div>
+                <p>Detailed procedures for goods and services procurement, competitive bidding, vendor management, and contract administration.</p>
+                <a href="docs/procurement-policy.html" class="btn">Read Policy</a>
+            </div>
+            
+            <!-- Grant Assurance Card -->
+            <div class="policy-card">
+                <div class="policy-icon">📊</div>
+                <h2>Grant Assurance Guidelines</h2>
+                <div class="policy-meta">
+                    <strong>Document Type:</strong> Compliance Guidelines<br>
+                    <strong>Scope:</strong> Grant Management<br>
+                    <strong>Status:</strong> Active
+                </div>
+                <p>Framework for grant administration, reporting, compliance, and assurance procedures to ensure proper fund utilization and accountability.</p>
+                <a href="docs/grant-assurance-policy.html" class="btn">Read Policy</a>
+            </div>
+            
+            <!-- Code of Conduct Card -->
+            <div class="policy-card">
+                <div class="policy-icon">📖</div>
+                <h2>Code of Conduct</h2>
+                <div class="policy-meta">
+                    <strong>Document Type:</strong> HR Policy<br>
+                    <strong>Scope:</strong> All Staff<br>
+                    <strong>Status:</strong> Active
+                </div>
+                <p>Standards of ethical behavior, professional conduct, and organizational values expected from all SFA Foundation personnel.</p>
+                <a href="docs/code-of-conduct.html" class="btn">Read Policy</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p><strong>Science for Africa Foundation</strong></p>
+            <p>Policy Documentation Center | Version 1.0 | Last Updated: June 2026</p>
+            <p>For inquiries regarding policies, contact: <strong>Head of Finance and Grants</strong></p>
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">
+                <a href="https://github.com/egsfa1234/sfapol1234" style="color: white; text-decoration: none;">GitHub Repository</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
